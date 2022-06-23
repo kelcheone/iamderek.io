@@ -1,0 +1,76 @@
+
+/** home styling */
+.home {
+    height: 100vh;
+    outline: 1px solid red;
+    animation-play-state: paused; 
+}
+.curvy-bar {
+    width: 100%;
+    height: 70vh;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    background: url('../images/curvybar.svg');
+    background-size: cover;
+}
+.bodyTxt {
+    width:70%;
+    left: 20%;
+    top: 10%;
+}
+.bodyTxt h1 {
+    color: #A661FF;
+}
+.bodyTxt p {
+    width: 50vmin;
+}
+.myprofile {
+    width: 25em;
+    height: 50vh;
+    object-fit: contain;
+    left: 80vh;
+    position: fixed;
+    bottom: 0px;
+}
+
+/** portfolio */
+.portfolio {
+    height: fit-content;
+    background: linear-gradient(90deg, #DFF6F7 30%, white 10%);
+    animation-play-state: paused;
+}
+
+/** hire me page styling */
+.hireMe {
+    height: 100vh;
+    text-align: center;
+}
+.hireMe .hiremebody {
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 5%;
+}
+.hireMe .hiremebody #links {
+    width: 40%;
+    left: 30%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.hireMe .hiremebody #links button {
+    
+    width: 15vmax;
+    height: 2em;
+    line-height: 2em;
+    display: grid;
+    grid-auto-flow: column;
+}
+.hireMe a {
+   text-decoration: none; 
+}
+#fiv, #upw {
+    font-size: 1em;
+    width: 2em;
+    height: 2em;
+}

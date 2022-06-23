@@ -1,0 +1,105 @@
+
+.pbutton {
+    width: 8em;
+    height: 2em;
+    color: white;
+    border-radius: 10px;
+    background-color: #CE2D4F;
+    transition: background-color 0.05s;
+}
+.pbutton:active {
+    background-color: #f73761;
+}
+.vert-stack {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    position: absolute;
+    height: 50vh;
+    width: 1.5em;
+    top: 25%;
+}
+#vert-left {
+    left: 15%;
+}
+#vert-right {
+    left: 85%;
+}
+.vert-stack * {
+    width: 1.5em;
+    height: 1.5em;
+    color: #CE2D4F;
+    background-color: transparent;
+}
+.vert-stack *:hover {
+    color: #ff3a65;
+}
+.vert-stack *:active {
+    color: #202020;
+}
+
+/** active page link */
+#active {
+    font-size: 1.5em;
+}
+/** project layout stling */
+.project {
+    width: 90%;
+    left: 5%;
+    display: flex;
+}
+.project img {
+    width: 35%;
+    object-fit: contain;
+}
+.project .descr {
+    display: grid;
+}
+.project .descr div {
+    width: 45%;
+    height: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+/** hire me form styling */
+form {
+    width: 40%;
+    height: 20em;
+    margin-top: 5vmax;
+    display: grid;
+    grid-auto-flow: row;
+    background-color: white;
+    left: 30%;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.116);
+}
+form input{
+    border-radius: 5px;
+    width: 15vmax;
+    height: 2em;
+    text-align: center;
+    outline: 3px #2020209f solid;
+    transition: outline 0.5s;
+}
+form textarea {
+    width: 80%;
+    left: 10%;
+    height: 8em;
+    border-radius: 5px;
+    outline: 3px #2020209f solid;
+    transition: outline 0.5s;
+}
+form input:focus, textarea:focus {
+    outline: 3px solid #CE2D4F;
+}
+form div {
+    width: 80%;
+    left: 10%;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 5%;
+}
+form button {
+    margin-left: auto;
+    margin-right: auto;
+}
