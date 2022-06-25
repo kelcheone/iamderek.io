@@ -1,0 +1,81 @@
+@media only screen and (max-width: 600px) {
+    * {
+        font-size: 1em;
+    }
+    html {
+        height: 100vh;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    nav {
+        height: 4em;
+        line-height: 4em;
+    }
+    nav div {
+        width: 100%;
+        height: 4em;
+        line-height: 4em;
+        left: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    nav div button {
+        font-weight: 700;
+        font-size: 1.2em;
+        top: 4vmin;
+    }
+    #active {
+        font-size: 0.8em !important;
+    }
+    /** home page */
+    .home {
+        
+    }
+    .home .myprofile {
+        left: 15%;
+        width: 13em;
+        padding: 0;
+    }
+    /** project page and component */
+    .portfolio {
+        display: block;
+        height: inherit;
+        padding-bottom: 10%;
+        background: linear-gradient(90deg, #DFF6F7 45%, white 10%) !important;
+    }
+    .project img {
+        width: 80vmin !important;
+        left: 10vmin;
+    }
+    .project .descr {
+        margin-top: -5%;
+    }
+    .project .descr div {
+        width: 90% !important;
+        left: 0%;
+    }
+    #portNavBar {
+        background: linear-gradient(90deg, #DFF6F7 45%, white 10%) !important;
+    }
+    /** tech stack and contact vertical icons */
+    #vert-left {
+        left: 5% !important;
+    }
+    #vert-right {
+        left: 90% !important;
+    }
+    /** contact form and page styling */
+    form {
+        width: 80vmin !important;
+        left: 10vmin !important;
+    }
+    form input {
+        width: 15em !important;
+        left: 1.8em !important;
+    }
+    textarea {
+        width: 15em !important;
+    }
+    
+}

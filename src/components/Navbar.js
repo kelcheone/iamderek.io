@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import {useNavigate} from 'react-router-dom'
+import '../mobile.css'
 
 const Navbar = () => {
     const navigate = useNavigate()
@@ -16,7 +17,7 @@ const Navbar = () => {
         }
     }, [])
   return (
-    <nav>
+    <nav id={window.location.pathname=="/portfolio" && 'portNavBar'}>
         <div>
         <button id={ids.home} 
         onClick={()=>navigate("/")} >Home</button>

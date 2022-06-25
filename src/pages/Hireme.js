@@ -8,9 +8,10 @@ const Hireme = (props) => {
         {props.navbar}
         <div className='hiremebody'>
             <ContForm />
+            You can also hire me on
             <div id='links'>
-                <button><a href=''>hire me on  </a><SiFiverr id='fiv' /></button>
-                <button><a href=''>hire me on  </a><SiUpwork id='upw' /></button>
+                <button id='fiv'><a href=''><SiFiverr /></a></button>
+                <button id='upw'><a href=''><SiUpwork  /></a></button>
             </div>
         </div>
     </div>

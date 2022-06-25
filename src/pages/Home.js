@@ -24,7 +24,7 @@ const Home = (props) => {
             I would love to be part of your project. 
             Just reach out
           </p>
-          <Pbutton text="hire me" />
+          <Pbutton text={"hire me"} href="https://google.com" />
         </div>
         <img className='myprofile' src={profile} />
 

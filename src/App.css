@@ -8,6 +8,7 @@
   font-family: 'Nunito Sans', sans-serif;
   font-size: 1.02em;
 }
+
 .App {
   text-align: center;
   font-family: 'Nunito Sans', sans-serif;
@@ -66,5 +67,8 @@ nav div button {
 }
 nav div button:hover {
   border-bottom: 4px solid crimson;
+}
+#portNavBar {
+  background: linear-gradient(90deg, #DFF6F7 30%, white 10%);
 }
 

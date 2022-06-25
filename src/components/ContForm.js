@@ -10,7 +10,6 @@ const ContForm = () => {
     return (
     <form onSubmit={handleSubmit}>
         <h5>Send Me a Message</h5>
-        <div>
             <input type='text' value={contForm.name} placeholder="Your name" 
                 onChange={(e)=>setForm(
                     prev=>({...prev, name: e.target.value})
@@ -21,13 +20,12 @@ const ContForm = () => {
                     prev=>({...prev, email: e.target.value})
                 )}
             />
-        </div>
         <textarea value={contForm.message} placeholder="Write message here"
             onChange={(e)=>setForm(
                 prev=>({...prev, message: e.target.value})
             )}
         ></textarea>
-        <Pbutton text="Send" />
+        <Pbutton text="Send"/>
     </form>
   )
 }

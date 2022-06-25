@@ -2,7 +2,7 @@
 .pbutton {
     width: 8em;
     height: 2em;
-    color: white;
+    color: rgb(255, 255, 255);
     border-radius: 10px;
     background-color: #CE2D4F;
     transition: background-color 0.05s;
@@ -47,6 +47,7 @@
     width: 90%;
     left: 5%;
     display: flex;
+    flex-wrap: wrap;
 }
 .project img {
     width: 35%;
@@ -64,25 +65,28 @@
 
 /** hire me form styling */
 form {
-    width: 40%;
+    width: 40em;
     height: 20em;
+    text-align: center;
     margin-top: 5vmax;
     display: grid;
     grid-auto-flow: row;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     left: 30%;
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.116);
 }
+
 form input{
     border-radius: 5px;
-    width: 15vmax;
+    width: 30em;
     height: 2em;
+    left: 4em;
     text-align: center;
     outline: 3px #2020209f solid;
     transition: outline 0.5s;
 }
 form textarea {
-    width: 80%;
+    width: 30em;
     left: 10%;
     height: 8em;
     border-radius: 5px;
@@ -92,14 +96,30 @@ form textarea {
 form input:focus, textarea:focus {
     outline: 3px solid #CE2D4F;
 }
-form div {
-    width: 80%;
-    left: 10%;
-    display: grid;
-    grid-auto-flow: column;
-    gap: 5%;
-}
 form button {
     margin-left: auto;
     margin-right: auto;
 }
+.spinner {
+    width: 30vmin;
+    height: 30vmin;
+    border-radius: 50%;
+    position: fixed;
+    top: 40%;
+    margin-left: 30vmin;
+    border:6px solid #f737610e;
+    border-top: 6px solid #f73761;
+    background-color: transparent;
+    animation-name: spin;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+    animation-direction:reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes spin {
+    from{transform: rotateZ(360deg); border-top: 6px solid #f737615d;}
+    to{border-top: 6px solid #A661FF;}
+}
+
+

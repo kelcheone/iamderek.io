@@ -3,10 +3,9 @@ import './comp.css'
 
 const Pbutton = (props) => {
   return (
-    <button className='pbutton'
-    onClick={props.function} 
-        >{props.text}
-        <a href={props.href} /></button>
+    <button className='pbutton' onClick={props.function}>
+      {(props.text || <a href={props.href} />) || (props.text && <a href={props.href} />)}
+    </button>
   )
 }
 

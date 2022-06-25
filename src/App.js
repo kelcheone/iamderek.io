@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import './mobile.css'
 import Home from './pages/Home';
 import { Route, Router, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
