@@ -1,125 +1,70 @@
 
-.pbutton {
-    width: 8em;
-    height: 2em;
-    color: rgb(255, 255, 255);
-    border-radius: 10px;
-    background-color: #CE2D4F;
-    transition: background-color 0.05s;
-}
-.pbutton:active {
-    background-color: #f73761;
-}
-.vert-stack {
-    display: flex;
-    flex-direction:column;
-    justify-content: space-around;
-    position: absolute;
-    height: 50vh;
-    width: 1.5em;
-    top: 25%;
-}
-#vert-left {
-    left: 15%;
-}
-#vert-right {
-    left: 85%;
-}
-.vert-stack * {
-    width: 1.5em;
-    height: 1.5em;
-    color: #CE2D4F;
-    background-color: transparent;
-}
-.vert-stack *:hover {
-    color: #ff3a65;
-}
-.vert-stack *:active {
-    color: #202020;
-}
 
-/** active page link */
-#active {
-    font-size: 1.5em;
+/* portfolio categories */
+.portfolio-categ{
+    width: 100%;
+    margin: auto;
+    height: max-content;
+    min-height: 40vh;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.024);
+    backdrop-filter: blur(15px);
 }
-/** project layout stling */
-.project {
-    width: 90%;
-    left: 5%;
+.portfolio-categ .projects {
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.portfolio-categ .h1 {
+    font-size: 1.2rem;
+    width: 100%;
+    text-indent: 5%;
+}
+.showProject {
+    width: 1fr;
+    padding: 1%;
+    height: inherit;
+}
+.showProject h1 {
+    position: absolute;
+    top: 10%;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    text-shadow: 2px 2px 12px black;
+}
+.showProject img {
+    width: 100%;
+    height: 40vh;
+    object-fit: contain;
+    transform: rotateZ(13deg);
+}
+.showProject span {
     display: flex;
     flex-wrap: wrap;
 }
-.project img {
-    width: 35%;
-    object-fit: contain;
-}
-.project .descr {
-    display: grid;
-}
-.project .descr div {
-    width: 45%;
-    height: 2em;
+.mainNav {
+    width: 100%;
+    height: 3em;
+    background-color: transparent;
+    line-height: 3em;
     display: flex;
     justify-content: space-between;
-}
-
-/** hire me form styling */
-form {
-    width: 40em;
-    height: 20em;
-    text-align: center;
-    margin-top: 5vmax;
-    display: grid;
-    grid-auto-flow: row;
-    background-color: rgb(255, 255, 255);
-    left: 30%;
-    box-shadow: 0 0 16px rgba(0, 0, 0, 0.116);
-}
-
-form input{
-    border-radius: 5px;
-    width: 30em;
-    height: 2em;
-    left: 4em;
-    text-align: center;
-    outline: 3px #2020209f solid;
-    transition: outline 0.5s;
-}
-form textarea {
-    width: 30em;
-    left: 10%;
-    height: 8em;
-    border-radius: 5px;
-    outline: 3px #2020209f solid;
-    transition: outline 0.5s;
-}
-form input:focus, textarea:focus {
-    outline: 3px solid #CE2D4F;
-}
-form button {
-    margin-left: auto;
-    margin-right: auto;
-}
-.spinner {
-    width: 30vmin;
-    height: 30vmin;
-    border-radius: 50%;
     position: fixed;
-    top: 40%;
-    margin-left: 30vmin;
-    border:6px solid #f737610e;
-    border-top: 6px solid #f73761;
+    top: 0;
+    z-index: 1000;
     background-color: transparent;
-    animation-name: spin;
-    animation-duration: 0.6s;
-    animation-fill-mode: forwards;
-    animation-direction:reverse;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
 }
-@keyframes spin {
-    from{transform: rotateZ(360deg); border-top: 6px solid #f737615d;}
-    to{border-top: 6px solid #A661FF;}
+.mainNav div {
+    width: 40%;
+    display: grid;
+    height: 90%;
+    grid-auto-flow: column;
+    transition: all 0.5s linear;
 }
-
-
+.navBtnDiv button{ /** navigation button itself*/
+    width: 5rem;
+    height: 100%;
+    padding: 0 !important;
+    text-align: left;
+    background-color: transparent;
+}

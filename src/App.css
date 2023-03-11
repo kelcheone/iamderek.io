@@ -1,74 +1,23 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@1&display=swap');
 * {
-  position: relative;
   padding: 0;
-  border: 0;
+  border: none;
   margin: 0;
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 1.02em;
+  outline: transparent !important;
+  color: white;
+  position: relative;
+  font-family: Segoe UI;
+  font-weight: lighter;
+  font-size: 1.5vmax;
+  transition: all 0.5s linear;
 }
-
-.App {
-  text-align: center;
-  font-family: 'Nunito Sans', sans-serif;
+html, body {
+    height: 100vh !important;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed !important;
+    background-color: black;
+    background: url('./images/bg1.webp');
 }
-#page {
-  opacity: 0;
-  width: 100%;
-  animation-name: dissolveIn;
-  animation-duration: 0.5s;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-  animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
-}
-@keyframes dissolveIn {
-  from{opacity: 0;}
-  to{opacity: 1;}
-}
-
-h1 {
-  font-weight: 1000;;
-  font-size: 5em;
-  margin-top: -3%;
-}
-h2 {
-  font-size: 2.5em;
-}
-h3 {
-  font-size: 1.5em;
-}
-nav {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  height: 10vmin;
-  line-height: 10vmin;
-  display: flex;
-  z-index: 100;
-  justify-content: center;
-}
-nav div {
-  width: 40%;
-  height: 10vmin;
-  line-height: 10vmin;
-  margin-left: auto;
-  margin-right: auto;
-  display: grid;
-  grid-auto-flow: column;
-}
-nav div button {
-  width: 10vmax;
-  height: 6vmin;
-  top: 2vmin;
-  background: transparent;
-  font-weight: 500;
-  transition: border 0.2s;
-}
-nav div button:hover {
-  border-bottom: 4px solid crimson;
-}
-#portNavBar {
-  background: linear-gradient(90deg, #DFF6F7 30%, white 10%);
-}
-

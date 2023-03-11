@@ -13,10 +13,10 @@ const stack = [
 
 const contacts = [
     {icon: <FaPhoneAlt />, href: "tel:+254770349697"},
-    {icon: <FaWhatsapp />, href: ""},
-    {icon: <MdEmail />, href: ""},
-    {icon: <FaTwitter />, href: ""},
-    {icon: <FaGithub />, href: ""}
+    {icon: <FaWhatsapp />, href: "https://wa.me/254770349697"},
+    {icon: <MdEmail />, href: "mailto:pesaderek1738@email.com"},
+    {icon: <FaTwitter />, href: "https://twitter.com/itStillDerek"},
+    {icon: <FaGithub />, href: "https://github.com/PessahDerek"}
 ]
 
 export {stack, contacts};

@@ -1,43 +1,20 @@
-import React, { useEffect, useState } from 'react'
-import {useNavigate} from 'react-router-dom'
-import '../mobile.css'
+import React from 'react'
+import NavBtn from './NavBtn'
+import './comp.css'
 
-const Navbar = () => {
-    const navigate = useNavigate()
-    const [ids, setIds] = useState({home: "active", port: "", hire: "", cv: ""});
-    useEffect(()=>{
-        if(window.location.pathname === "/"){
-            setIds({home: "active", port: "", hire: "", cv: ""});
-        }
-        if(window.location.pathname === "/portfolio"){
-            setIds({home: "", port: "active", hire: "", cv: ""})
-        }
-        if(window.location.pathname === "/hire_me"){
-            setIds({home: "", port: "", hire: "active", cv: ""})
-        }
-    }, [])
+const NavBar = () => {
+    
   return (
-    <nav id={window.location.pathname=="/portfolio" && 'portNavBar'}>
+    <nav className='mainNav'>
+        <h1>iamDerek</h1>
         <div>
-        <button id={ids.home} 
-        onClick={()=>navigate("/")} >Home</button>
-
-        <button id={ids.port} onClick={()=>{
-            window.location.pathname !== "/portfolio" && navigate("/portfolio")
-        }}>Portfolio</button>
-
-        <button id={ids.hire} onClick={()=>{
-            window.location.pathname !== "/hire_me" && navigate("/hire_me")
-        }}
-        >Hire Me</button>
-
-
-        <button id={ids.cv} 
-        
-        >Resum'e</button>
+            <NavBtn text={"home"} path="/" />
+            <NavBtn text={"portfolio"} path='/portfolio' />
+            <NavBtn text={"contacts"} path='/contacts' />
+            <NavBtn text={"cv"} path="/download" />
         </div>
     </nav>
-  )
+    )
 }
 
-export default Navbar
+export default NavBar

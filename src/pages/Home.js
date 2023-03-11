@@ -1,33 +1,36 @@
-import React, { useEffect, useLayoutEffect } from 'react'
-import Pbutton from '../components/Pbutton'
-import './pagecss.css'
-import profile from '../images/profile.png'
-import Stacks from '../components/Stacks'
-import {stack, contacts} from '../ListNfuncs'
+import React from 'react'
+import './page.css'
+import data from '../data/personal.json'
 
-
-const Home = (props) => {
-  useEffect(()=>{
-    document.querySelector(".home").style.animationPlayState="running";
-  }, [])
+const Home = () => {
+    
   return (
-    <div id='page' className='home'>
-        {props.navbar}
-        <div className='curvy-bar'></div>
-        <Stacks stacklass={"vert-left"} stacks={stack} />
-        <Stacks stacklass={"vert-right"} stacks={contacts} />
-        <div className='bodyTxt'>
-          <span id='name'><h3>Hello, I'm</h3><h2>Derek Pesa</h2></span>
-          <h1 id='title'>Software Developer</h1>
-          <p>
-            Hello, I’m Derek. I’m a full stack developer.
-            I would love to be part of your project. 
-            Just reach out
-          </p>
-          <Pbutton text={"hire me"} href="https://google.com" />
+    <div className='page' id='home-page'>
+        <div className='container'>
+            <div className='part1'>
+                <h1 id='major-h1'>
+                    {"Softw/\\r<"}
+                </h1>
+                <h1 id='major-h1'>
+                    {"D<v<lop<r"}
+                </h1>
+            </div>
+            <div className='part2'>
+                <div className='personal-info'>
+                    <span >
+                        <p style={{fontSize: '2rem'}} role='term'>Derek Pesa</p>
+                    </span>
+                    <span>
+                        <p>Nairobi, Kenya (remote)</p>
+                    </span>
+                </div>
+                <div className='intro-txt'>
+                    <p>
+                        {data.introText}
+                    </p>
+                </div>
+            </div>
         </div>
-        <img className='myprofile' src={profile} />
-
     </div>
   )
 }

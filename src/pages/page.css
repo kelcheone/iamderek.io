@@ -1,0 +1,40 @@
+
+.page {
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* portfolio page styling */
+#portfolio {
+    /* background: url(../images/bg1.webp); */
+    background-attachment: fixed !important;
+    height: 100vh;
+}
+#portfolio .page-content {
+    width: 90%;
+    margin: auto;
+    top: 3em;
+    display: grid;
+    grid-auto-flow: row;
+    gap: 1rem;
+}
+
+/* homepage styling */
+#home-page {
+    display: flex;
+    justify-content: space-around;
+}
+#home-page .container {
+    width: 90%;
+    height: max-content;
+    margin: auto;
+}
+
+#home-page .container .part2  {
+    width: 100%;
+    display: grid;
+    gap: 5%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+
