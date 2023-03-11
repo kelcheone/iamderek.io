@@ -6,7 +6,7 @@ const TextInput = ({type, keyN, ph}) => {
 
     }
   return (
-    <input role="textbox" style={style} type={type} name={keyN} placeholder={ph} />
+    <input style={style} type={type} name={keyN} placeholder={ph} />
   )
 }
 

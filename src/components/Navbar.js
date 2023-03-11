@@ -1,17 +1,13 @@
-import React, { useMemo, useState } from 'react'
+import React, { useState } from 'react'
 import NavBtn from './NavBtn'
 import './comp.css'
 import DropDownNav from './DropDownNav'
 
 const NavBar = () => {
-    let [winSize, setWinSize] = useState(window.innerWidth)
-
-    let isPc = useMemo(()=>{
-        return window.innerWidth > 599
-    }, [winSize])
+    let [isPc, setIsPc] = useState(window.innerWidth > 599)
 
     window.addEventListener('resize', ()=>{
-        setWinSize(window.innerWidth)
+        setIsPc(window.innerWidth > 599)
     })
   return (
     <nav className='mainNav'>
