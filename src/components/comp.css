@@ -1,4 +1,69 @@
 
+/* dropdown navigations */
+.dropDownNavs {
+    width: max-content !important;
+    display: grid;
+    grid-auto-flow: row !important;
+}
+.dropDownNavs #btns {
+    position: absolute ;
+    display: grid;
+    left: -150px;
+    grid-auto-flow: row;
+    top: 100%;
+    /* outline: 2px solid red !important; */
+}
+
+/* dropBtn styling */
+.dropBtn {
+    width: 40px;
+    height: inherit;
+    margin: auto;
+    background-color: transparent;
+    display: grid;
+    grid-auto-flow: row;
+    transform-origin: right;
+    transition: 0.05s all linear !important;
+}
+.dropBtn #a, .dropBtn #b, .dropBtn #c{
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    margin: auto;
+    margin-left: auto;
+}
+
+/* button1 */
+.button1 {
+    width: 100%;
+    height: 40px;
+    margin: auto;
+    border-radius: 5px;
+    background: rgb(32, 36, 255);
+}
+/* contact form */
+form {
+    width: 1fr;
+    display: grid;
+    grid-auto-flow: row;
+    gap: 1rem;
+}
+form input, textarea {
+    width: 98%;
+    min-height: 40px;
+    margin: auto;
+    padding-inline-start: 3%;
+    background-color: rgba(255, 255, 255, 0.222);
+    backdrop-filter: blur(2px);
+}
+input::placeholder, textarea::placeholder {
+    color: rgb(225, 194, 255);
+}
+form textarea {
+    height: 10em;
+    color: white;
+    resize: none;
+}
 
 /* portfolio categories */
 .portfolio-categ{
@@ -24,10 +89,15 @@
     width: 1fr;
     padding: 1%;
     height: inherit;
+    background: linear-gradient(45deg, rgba(128, 0, 128, 0.269), rgba(255, 255, 255, 0.184));
+    backdrop-filter: blur(15px);
+    color: black !important;
+    border-radius: 5px;
+    margin: 5%;
 }
 .showProject h1 {
     position: absolute;
-    top: 10%;
+    top: 3%;
     font-size: 1.2rem;
     font-weight: bolder;
     text-shadow: 2px 2px 12px black;
@@ -60,6 +130,16 @@
     height: 90%;
     grid-auto-flow: column;
     transition: all 0.5s linear;
+}
+.navBtnMobile {
+    background-color: transparent;
+    font-size: 1.05em;
+    width: 200px;
+    border-bottom: 0.05px solid white;
+    text-indent: 5%;
+    height: 3em;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.79);
 }
 .navBtnDiv button{ /** navigation button itself*/
     width: 5rem;

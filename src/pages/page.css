@@ -4,6 +4,24 @@
     min-height: 100vh;
 }
 
+/* contacts page */
+#contact-page .container {
+    width: 90%;
+    margin: auto;
+    top: 5em;
+    display: grid;
+    gap: 5%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+#contact-page .container .sub-cont {
+    width: 90%;
+    margin: auto;
+}
+#contact-page #hire-me {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 0.5em;
+}
 /* portfolio page styling */
 #portfolio {
     /* background: url(../images/bg1.webp); */

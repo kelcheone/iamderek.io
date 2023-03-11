@@ -4,20 +4,27 @@
   padding: 0;
   border: none;
   margin: 0;
-  outline: transparent !important;
+  outline: transparent;
   color: white;
   position: relative;
   font-family: Segoe UI;
   font-weight: lighter;
-  font-size: 1.5vmax;
+  font-size: 1.2rem;
   transition: all 0.5s linear;
 }
 html, body {
     height: 100vh !important;
+    background: url('./images/bg1.webp');
     background-size: cover !important;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat !important;
     background-position: center;
     background-attachment: fixed !important;
     background-color: black;
-    background: url('./images/bg1.webp');
+}
+
+@media only screen and (max-width: 600px){
+    html, body {
+        background-size: 200vw 100vh !important;
+        background-position-x: -100vw !important;
+    }
 }

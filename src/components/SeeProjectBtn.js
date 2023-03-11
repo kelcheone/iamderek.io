@@ -5,17 +5,18 @@ const SeeProjectBtn = ({link}) => {
         window.open(link, "_blank")
     }
   return (
-    <button onClick={openProject} style={style}>
+    <button onClick={openProject} style={Btnstyle}>
         👀See Project
     </button>
   )
 }
 
-const style = {
+export const Btnstyle = {
     backgroundColor: 'blueviolet',
-    width: '8rem',
     height: '2rem',
-    borderRadius: '5px'
+    width: "90%",
+    borderRadius: '5px',
+    fontSize: "16px"
 }
 
 export default SeeProjectBtn

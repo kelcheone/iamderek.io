@@ -1,5 +1,6 @@
 import React from 'react'
 import './comp.css'
+import GithubBtn from './GithubBtn'
 import SeeProjectBtn from './SeeProjectBtn'
 
 const ShowProject = ({project}) => {
@@ -15,8 +16,9 @@ const ShowProject = ({project}) => {
             {openStack ? <em>{stack.reduce((p,i)=>p + ", " + i)}</em> 
             : <em>For Client Discretion the stack remains secret</em>}
         </span>
-        <span>
+        <span style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(40%, 1fr))'}}>
             <SeeProjectBtn link={link} />
+            <GithubBtn gitLink={github} gitOpen={openGit} />
         </span>
     </div>
   )
