@@ -1,5 +1,5 @@
 
-import { Route, Router, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import ContactPage from './pages/ContactPage';
 import Home from './pages/Home';

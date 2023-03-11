@@ -17,7 +17,7 @@
 /* dropBtn styling */
 .dropBtn {
     width: 40px;
-    height: inherit;
+    height: 1em;
     margin: auto;
     background-color: transparent;
     display: grid;

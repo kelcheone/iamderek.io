@@ -16,12 +16,14 @@ const NavBar = () => {
   return (
     <nav className='mainNav'>
         <a href='/' style={logo}>iamDerek</a>
-        {isPc ? <div>
+        {isPc ? 
+        <div>
             <NavBtn text={"home"} path="/" />
             <NavBtn text={"portfolio"} path='/portfolio' />
             <NavBtn text={"contacts"} path='/contacts' />
             <NavBtn text={"cv"} path="/download" />
-        </div> :
+        </div> 
+        :
         <DropDownNav />
         }
     </nav>
