@@ -6,9 +6,9 @@ const NavBtn = ({show, text, path, mobile}) => {
     const {pathname} = useLocation()
     const navigate = useNavigate()
 
-    const downloadCv = () => {
-        
-    }
+    // const downloadCv = () => {
+
+    // }
     const navTo = () =>{
         try {
             show(false)
