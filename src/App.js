@@ -1,9 +1,10 @@
 
-import { Route, Routes } from 'react-router-dom';
-import NavBar from './Components/NavBar.js';
+
 import ContactPage from './pages/ContactPage';
 import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
+import NavBar from './Components/NavBar'
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
     
