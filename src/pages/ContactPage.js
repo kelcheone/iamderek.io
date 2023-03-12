@@ -1,6 +1,6 @@
 import React from 'react'
-import ContactForm from '../Components/ContactForm'
-import HireMeBtns from '../Components/HireMeBtns'
+import ContactForm from '../components/ContactForm'
+import HireMeBtns from '../components/HireMeBtns'
 import './page.css'
 
 const ContactPage = () => {
