@@ -1,7 +1,7 @@
 import React from 'react'
 import './page.css'
 import projects from '../data/projects'
-import PortfolioCategory from '../components/PortfolioCategory'
+import PortfolioCategory from '../Components/PortfolioCategory'
 
 const Portfolio = () => {
     let categories = Object.keys(projects)
